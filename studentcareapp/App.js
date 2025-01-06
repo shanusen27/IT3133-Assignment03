@@ -24,7 +24,17 @@ export default function App() {
               headerTitleAlign: "center",
             }}
           >
-            {/* Screens will be added in the next step */}
+            <Stack.Screen
+            name="login"
+            component={Login}
+            options={{ title: "UoV Student Care" }}
+          />
+            <Stack.Screen
+            name="home"
+            component={Home}
+            options={{ title: "UoV Student Care" }}
+          />
+
           </Stack.Navigator>
         </NavigationContainer>
       </PaperProvider>
